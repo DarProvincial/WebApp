@@ -1,0 +1,266 @@
+      #modalDownloadMember.modal {
+        text-align: center;
+      }
+
+      body.modal-open .modal {
+        display: flex !important;
+        height: 100%;
+      }
+
+      body.modal-open .modal .modal-dialog {
+        margin: auto;
+      }
+      
+      .date , .dl-title{
+        font-size: 1.2em;
+      }
+
+      .wrapper-clock {
+        width: 250px;
+
+      }
+
+      .content-clock {
+        background: #fff
+        width: 250px;
+        box-shadow: 0 0 2px rgba(0,0,0,0.2);
+      }
+
+      .date , .dl-title {
+        border-bottom: 2px solid #eee;
+        padding:5px;
+      }
+      .time {
+        font-size: 3em;
+        margin-top: -10px;
+        padding:5px;
+      }
+      .d-time {
+        margin-top: -10px;
+        font-size: 2.0em;
+        padding: 5px;
+      }
+      .d-date {
+        margin-top: -20px;
+        padding: 5px;
+        font-size: 1.0em;
+      }
+      .agenda { padding:10px; }
+
+      /* Dates */
+      .agenda .agenda-date { width: 170px; }
+      .agenda .agenda-date .dayofmonth {
+        width: 40px;
+        font-size: 36px;
+        line-height: 36px;
+        float: left;
+        text-align: right;
+        margin-right: 10px; 
+      }
+      .agenda .agenda-date .shortdate {
+        font-size: 0.75em; 
+      }
+
+
+      /* Times */
+      .agenda .agenda-time { width: 140px; } 
+
+
+      .agenda .agenda-events {  } 
+      /* Events */
+
+      .agenda .agenda-events .agenda-event {  } 
+
+      @media (max-width: 767px) {
+
+      }
+
+      <style>
+      .panel{
+        margin-right: 3px;
+      }
+
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        margin-right: 35%;   
+        margin-left: 35%;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        cursor: pointer;
+        width:30%;
+        height:30px;
+        margin-top: -20px;
+        
+
+      }
+      input[type=text]{
+        width:100%;
+        margin-top:5px;
+
+      }
+
+      .chatbox-wrap {
+        padding: 10px; 
+      }
+      .chat_wrapper {
+        width: 100%;
+        height:50%;
+
+        background: #3B5998;
+        border: 1px solid #999999;
+        padding: 10px;
+        font: 14px 'lucida grande',tahoma,verdana,arial,sans-serif;
+      }
+      .chat_wrapper .message_box {
+        background: #F7F7F7;
+        height:250px;
+        overflow: hidden;
+        padding: 10px 10px 20px 10px;
+        border: 1px solid #999999;
+      }
+      .chat_wrapper  input{
+        //padding: 2px 2px 2px 5px;
+      }
+      .system_msg{color: #BDBDBD;font-style: italic;}
+      .user_name{font-weight:bold;}
+      .user_message{color: #88B6E0;}
+
+      @media only screen and (max-width: 720px) {
+        /* For mobile phones: */
+        .chat_wrapper {
+          width: 95%;
+          height: 40%;
+        }
+
+
+        .button{ width:100%;
+          margin-right:auto;   
+          margin-left:auto;
+          height:40px;} 
+        }
+
+
+        .bs-calltoaction{
+          position: relative;
+          width:auto;
+          padding: 15px 25px;
+          border: 1px solid black;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+        }
+
+        .bs-calltoaction > .row{
+          display:table;
+          width: calc(100% + 30px);
+        }
+
+        .bs-calltoaction > .row > [class^="col-"],
+        .bs-calltoaction > .row > [class*=" col-"]{
+          float:none;
+          display:table-cell;
+          vertical-align:middle;
+        }
+
+        .cta-contents{
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
+        .cta-title{
+          margin: 0 auto 15px;
+          padding: 0;
+        }
+
+        .cta-desc{
+          padding: 0;
+        }
+
+        .cta-desc p:last-child{
+          margin-bottom: 0;
+        }
+
+        .cta-button{
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
+        @media (max-width: 991px){
+          .bs-calltoaction > .row{
+            display:block;
+            width: auto;
+          }
+
+          .bs-calltoaction > .row > [class^="col-"],
+          .bs-calltoaction > .row > [class*=" col-"]{
+            float:none;
+            display:block;
+            vertical-align:middle;
+            position: relative;
+          }
+
+          .cta-contents{
+            text-align: center;
+          }
+        }
+
+
+
+        .bs-calltoaction.bs-calltoaction-default{
+          color: #333;
+          background-color: #fff;
+          border-color: #ccc;
+        }
+
+        .bs-calltoaction.bs-calltoaction-primary{
+          color: #fff;
+          background-color: #337ab7;
+          border-color: #2e6da4;
+        }
+
+        .bs-calltoaction.bs-calltoaction-info{
+          color: #fff;
+          background-color: #5bc0de;
+          border-color: #46b8da;
+        }
+
+        .bs-calltoaction.bs-calltoaction-success{
+          color: #fff;
+          background-color: #5cb85c;
+          border-color: #4cae4c;
+        }
+
+        .bs-calltoaction.bs-calltoaction-warning{
+          color: #fff;
+          background-color: #f0ad4e;
+          border-color: #eea236;
+        }
+
+        .bs-calltoaction.bs-calltoaction-danger{
+          color: #fff;
+          background-color: #d9534f;
+          border-color: #d43f3a;
+        }
+
+        .bs-calltoaction.bs-calltoaction-primary .cta-button .btn,
+        .bs-calltoaction.bs-calltoaction-info .cta-button .btn,
+        .bs-calltoaction.bs-calltoaction-success .cta-button .btn,
+        .bs-calltoaction.bs-calltoaction-warning .cta-button .btn,
+        .bs-calltoaction.bs-calltoaction-danger .cta-button .btn{
+          border-color:#fff;
+        }
+
+        .notice-container {
+          overflow:auto;
+          height:400px;
+        }
+
+.bigHr {
+  background-color: lightgrey !important;
+  color: dimgrey !important;
+  height: 0.5px !important;
+  width: 100% !important;
+}
